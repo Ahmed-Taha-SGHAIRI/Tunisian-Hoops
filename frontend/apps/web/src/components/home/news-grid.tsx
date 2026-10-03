@@ -1,12 +1,12 @@
-import { useTranslations, useLocale } from 'next-intl';
-import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
+import { getTranslations, getLocale } from 'next-intl/server';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { api } from '@/lib/data/api';
 import { Link } from '@/i18n/routing';
 import { CalendarDays, ArrowRight } from 'lucide-react';
 
 export async function NewsGrid() {
-  const t = useTranslations('Navigation');
-  const locale = useLocale();
+  const t = await getTranslations('Navigation');
+  const locale = await getLocale();
   const news = await api.news.getLatest(3);
 
   return (

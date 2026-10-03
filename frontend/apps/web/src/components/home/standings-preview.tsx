@@ -1,4 +1,4 @@
-import { useTranslations, useLocale } from 'next-intl';
+import { getTranslations, getLocale } from 'next-intl/server';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { api } from '@/lib/data/api';
@@ -7,8 +7,8 @@ import { ArrowRight } from 'lucide-react';
 import { TeamBadge } from '@/components/shared/team-badge';
 
 export async function StandingsPreview() {
-  const t = useTranslations('Navigation');
-  const locale = useLocale();
+  const t = await getTranslations('Navigation');
+  const locale = await getLocale();
   const standings = await api.standings.get();
   const allTeams = await api.teams.getAll();
 

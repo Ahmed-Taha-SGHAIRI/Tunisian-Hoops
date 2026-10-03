@@ -1,4 +1,4 @@
-import { useTranslations, useLocale } from 'next-intl';
+import { getLocale } from 'next-intl/server';
 import { Card, CardContent } from '@/components/ui/card';
 import { api } from '@/lib/data/api';
 import { TeamBadge } from '@/components/shared/team-badge';
@@ -7,7 +7,7 @@ import { ScoreDisplay } from '@/components/shared/score-display';
 import { Link } from '@/i18n/routing';
 
 export async function HeroLiveGames() {
-  const locale = useLocale();
+  const locale = await getLocale();
   const liveGames = await api.games.getLive();
   const allTeams = await api.teams.getAll();
 

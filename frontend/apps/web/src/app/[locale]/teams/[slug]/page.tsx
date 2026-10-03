@@ -5,7 +5,6 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { TeamBadge } from '@/components/shared/team-badge';
 import { FadeUp, StaggerContainer } from '@/components/shared/motion-presets';
 import { getLocale } from 'next-intl/server';
-import { Button } from '@/components/ui/button';
 import { Link } from '@/i18n/routing';
 import { ArrowLeft, Users, Trophy, MapPin } from 'lucide-react';
 

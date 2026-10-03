@@ -5,8 +5,6 @@ import { StandingsPreview } from '@/components/home/standings-preview';
 import { FadeUp, StaggerContainer } from '@/components/shared/motion-presets';
 
 export default async function Home() {
-  const t = await getTranslations('Navigation');
-  
   return (
     <StaggerContainer className="container mx-auto px-4 py-8 space-y-12">
       <FadeUp>

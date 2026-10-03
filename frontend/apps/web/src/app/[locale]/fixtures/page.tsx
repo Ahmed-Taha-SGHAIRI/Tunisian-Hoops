@@ -7,6 +7,8 @@ import { ScoreDisplay } from '@/components/shared/score-display';
 import { FadeUp, StaggerContainer } from '@/components/shared/motion-presets';
 import { getLocale } from 'next-intl/server';
 
+import type { Game } from '@tunisian-hoops/shared';
+
 export async function generateMetadata() {
   const t = await getTranslations('Navigation');
   return { title: `${t('fixtures')} - Tunisian Hoops` };
@@ -21,7 +23,7 @@ export default async function FixturesPage() {
   const upcoming = allGames.filter(g => g.status === 'scheduled');
   const results = allGames.filter(g => g.status === 'finished');
   
-  const renderGame = (game: any) => {
+  const renderGame = (game: Game) => {
     const homeTeam = allTeams.find(t => t.id === game.homeTeamId);
     const awayTeam = allTeams.find(t => t.id === game.awayTeamId);
     if (!homeTeam || !awayTeam) return null;
