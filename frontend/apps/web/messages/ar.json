@@ -1,0 +1,20 @@
+{
+  "Navigation": {
+    "home": "الرئيسية",
+    "fixtures": "المباريات",
+    "standings": "الترتيب",
+    "teams": "الفرق",
+    "more": "المزيد"
+  },
+  "Common": {
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ ما",
+    "myTeam": "فريقي",
+    "chooseTeam": "اختر فريقك"
+  },
+  "Theme": {
+    "light": "فاتح",
+    "dark": "داكن",
+    "system": "النظام"
+  }
+}

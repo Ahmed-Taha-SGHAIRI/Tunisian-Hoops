@@ -1,0 +1,20 @@
+{
+  "Navigation": {
+    "home": "Accueil",
+    "fixtures": "Calendrier",
+    "standings": "Classement",
+    "teams": "Équipes",
+    "more": "Plus"
+  },
+  "Common": {
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "myTeam": "Mon équipe",
+    "chooseTeam": "Choisir une équipe"
+  },
+  "Theme": {
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système"
+  }
+}
