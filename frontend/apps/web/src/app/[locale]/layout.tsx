@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { routing, isValidLocale } from '@/i18n/routing';
+import { isValidLocale } from '@/i18n/routing';
 
 import { ThemeProvider } from '@/components/theme-provider';
 
