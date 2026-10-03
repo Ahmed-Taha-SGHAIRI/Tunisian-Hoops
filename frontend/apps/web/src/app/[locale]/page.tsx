@@ -1,4 +1,3 @@
-import { getTranslations } from 'next-intl/server';
 import { HeroLiveGames } from '@/components/home/hero-live-games';
 import { NewsGrid } from '@/components/home/news-grid';
 import { StandingsPreview } from '@/components/home/standings-preview';
