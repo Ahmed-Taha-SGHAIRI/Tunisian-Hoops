@@ -1,0 +1,20 @@
+{
+  "name": "tunisian-hoops",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter @tunisian-hoops/web dev",
+    "build": "pnpm --filter @tunisian-hoops/web build",
+    "lint": "pnpm --filter @tunisian-hoops/web lint",
+    "typecheck": "pnpm -r typecheck",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,css,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  }
+}
